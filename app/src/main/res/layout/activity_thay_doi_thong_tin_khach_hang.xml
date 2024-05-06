@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:ignore="ExtraText">
+
+    <!-- Thay đổi thông tin khách hàng -->
+    <Button
+        android:id="@+id/btn_change_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thay đổi thông tin khách hàng" />
+
+    <!-- Thay đổi mật khẩu -->
+    <Button
+        android:id="@+id/btn_change_password"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Thay đổi mật khẩu" />
+
+    <!-- Đăng xuất -->
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Đăng xuất" />
+
+    <!-- Fragment Container -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView5"
+        android:name="com.example.cuoiki.Fragment_anh_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85mm"/>
+
+</LinearLayout>

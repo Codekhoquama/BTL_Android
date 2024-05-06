@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="#009688"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/editTextText"
+        android:layout_toRightOf="@id/textView2"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/textView2"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/ic_lock"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTextPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="150dp"
+        android:background="#009688"
+
+        android:text="Login"
+        android:textColor="#ffff" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="44dp"
+        android:text="Fragment"
+        android:layout_below="@id/button"
+        android:visibility="invisible"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/textView"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView4"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/ic_user"
+        />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView4"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/textView"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="50dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button2"
+        android:id="@+id/btndialog"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

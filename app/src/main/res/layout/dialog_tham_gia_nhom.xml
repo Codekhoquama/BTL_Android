@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="#F4E9E9"
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:id="@+id/textThamGia"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textColor="#ff00"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:text="Nhập mã nhóm tham gia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:hint="Nhập mã nhóm"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textThamGia"
+        android:id="@+id/editTextMaNhom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/editTextMaNhom"
+        android:id="@+id/buttonThamGia"
+        android:text="Tham Gia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_toRightOf="@+id/buttonThamGia"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/editTextMaNhom"
+        android:id="@+id/buttonHuyThamGia"
+        android:text="Hủy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

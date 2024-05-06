@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NhomThamGia">
+
+    <!-- Button thành viên giảm giá -->
+
+    <!-- Button thông báo -->
+
+    <!-- TextView tên nhóm -->
+
+    <TextView
+
+        android:id="@+id/MaNhom"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="4dp"
+        android:layout_toEndOf="@+id/btnNotification"
+        android:text="Mã nhóm"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="13dp"
+        android:text="Đăng bài"
+        />
+
+    <TextView
+        android:id="@+id/tvGroupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnNotification"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Tên nhóm:"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <!-- TextView tên nhóm trưởng -->
+
+    <!-- ImageView ảnh nhóm trưởng -->
+
+    <!-- ListView danh sách thành viên -->
+
+    <TextView
+        android:id="@+id/tvGroupLeaderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvGroupName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="34dp"
+        android:text="Nhóm trưởng:"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvGroupLeaderName"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/tvList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="9dp"
+        android:text=" thành viên tham gia"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lvUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvList"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>

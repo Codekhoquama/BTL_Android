@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textViewContent"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/textviewTen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:text="Tên Công Việc"
+            android:textColor="#2D2045"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageviewDelete"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/delete" />
+
+        <ImageView
+            android:id="@+id/imageviewEdit"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/edit" />
+
+    </LinearLayout>
+
+    <!-- TextView mới -->
+    <TextView
+        android:id="@+id/textviewNoiDung"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:padding="10dp"
+        android:text="Nội dung công việc"
+        android:textColor="#2D2045"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/textviewNoiDung"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray" />
+
+</LinearLayout>

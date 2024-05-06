@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- ImageView cho Settings -->
+    <ImageView
+        android:id="@+id/btnSetting"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="25dp"
+        android:src="@drawable/settings" />
+
+    <!-- ImageView cho Notes -->
+    <ImageView
+        android:id="@+id/btnNote"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/btnSetting"
+        android:src="@drawable/notes" />
+
+    <!-- ImageView cho People -->
+    <ImageView
+        android:id="@+id/btnGroup"
+        android:layout_width="60dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/btnNote"
+        android:src="@drawable/people" />
+
+    <!-- ImageView cho Add -->
+    <ImageView
+        android:id="@+id/btnPlus"
+        android:layout_width="70dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/btnGroup"
+        android:src="@drawable/add" />
+
+    <!-- ImageView cover -->
+    <ImageView
+        android:id="@+id/coverImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:background="#88000000"
+        android:clickable="true"
+        android:focusable="true" />
+
+</RelativeLayout>
